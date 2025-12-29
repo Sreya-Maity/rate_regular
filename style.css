@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    background: #eee;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  /* Poster container */
+  .poster {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 1 / 1.25;              /* keeps poster shape */
+    background: url("rate_gold_copy.jpg") no-repeat center;
+    background-size: contain;            /* no cropping */
+    background-color: #fff;
+  }
+  
+  /* Editable text */
+  .edit {
+    position: absolute;
+    text-align: center;
+    outline: none;
+    cursor: text;
+    padding: 6px;
+    border-radius: 6px;
+    background: transparent;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  /* Desktop font */
+  .edit {
+    font-size: clamp(14px, 2.2vw, 22px);
+  }
+  
+  /* Positioning using percentages (responsive) */
+  .box1 {
+    top: 31.5%;
+    left: 34.5%;
+    width: 31%;
+    height: 4%;
+  }
+  
+  .box2 {
+        top: 45%;
+    left: 35%;
+    width: 29%;
+    height: 5%;
+  }
+  
+  .box3 {
+    top: 61%;
+    left: 35%;
+    width: 28%;
+    height: 5%
+  }
+  
+  
+  /* Mobile fine tuning */
+  @media (max-width: 600px) {
+    .edit {
+      padding: 4px;
+    }
+  }
+  
